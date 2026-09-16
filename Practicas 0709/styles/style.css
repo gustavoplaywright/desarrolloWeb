@@ -1,0 +1,16 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Pinyon+Script&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=League+Gothic&family=Pinyon+Script&display=swap');
+
+
+ body{
+    font-family: "Irish Grover", system-ui;
+    background-color: #0C1821;
+    color: #f8f8f8;
+ }
+
+ h1{
+   font-family: "League Gothic", sans-serif;
+ }
+

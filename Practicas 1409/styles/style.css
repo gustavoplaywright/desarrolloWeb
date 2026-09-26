@@ -1,5 +1,6 @@
 /* ===== Fuentes ===== */
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=League+Gothic&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Kablammo&family=League+Gothic&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap')
 
 /* ===== Reset ===== */
 * {
@@ -18,9 +19,9 @@ body {
 h1 {
   font-family: "League Gothic", sans-serif;
   color: #23C4FF;
-  text-align: center;
+/*  text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: center;*/
 }
 
 h2 {
@@ -53,9 +54,10 @@ header {
 }
 
 .navN ul {
-  list-style-type: none;
   display: flex;
+  justify-content: space-between; /* logo vs links */
   align-items: center;
+  list-style-type: none;
   gap: 2rem;
 }
 
@@ -65,14 +67,17 @@ main,
   padding: 2rem;
 }
 
+
 /* ===== Sección "Inicio" y "Nosotros" (index.html) ===== */
 .inicio {
   background-color: #0C1821;
   color: #23C4FF;
-  padding: 1rem;
-  line-height: 1.6;
+  padding: 1.5rem;
   font-family: "Irish Grover", system-ui;
   border: 2px solid #23C4FF;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 #nosotros {
@@ -85,4 +90,84 @@ main,
   justify-content: center;
   gap: 20rem;
   margin-top: 2rem;
+  font-family: "League Gothic", sans-serif;
+  font-size: x-large;
 }
+
+/* ===== Galería de imágenes (solo index.html) ===== */
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  font-family: "League Gothic", sans-serif;
+  font-size: x-large;
+}
+
+.galeria figure {
+  margin: 0;
+}
+
+.galeria img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* ===== footer ===== */
+.footer {
+  padding: 1rem;
+  line-height: 1.6;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  list-style: none;
+  text-align: center;
+  
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ===== Sección contacto ===== */
+#contacto {
+  padding: 1.5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 2px solid #23C4FF;
+  color: #23C4FF;
+}
+
+#contacto form {
+  display: flex-block;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ===== Estilo de los H3 del menú ===== */
+.page-menu h3 {
+  text-align: center;
+  padding: 2rem;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* ===== Artículos de páginas internas (notebooks, computadoras, componentes) ===== */
+main article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+

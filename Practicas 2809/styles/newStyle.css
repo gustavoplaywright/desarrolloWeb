@@ -1,0 +1,239 @@
+@import "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Irish+Grover&family=Kablammo&family=League+Gothic&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap";
+
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Headers ===== */
+
+header {
+  padding: 2rem;
+  gap: 1rem;
+  background-color: #000000;
+  justify-content: space-between;
+}
+
+/* ===== El titulo de cada pagina se va a ver asi ===== */
+h1 {
+  font-size: 2rem;
+  font-style: oblique;
+  color: red;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+}
+
+/* ===== Aca defino la img solamente del logo en cada pagina ===== */
+.logo {
+  width: 700px;
+  height: auto;
+}
+
+/* ===== Esto es de la barra de navegación (Nav) ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  align-items: flex-end;
+
+
+}
+
+nav ul li a {
+  color: #FF0000;
+  text-decoration: none;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+
+}
+
+
+/* ===== Estilado del footer ===== */
+footer {
+  display: flex;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background-color: #000000;
+  justify-content: space-between;
+  color: #FF0000;
+}
+
+/* ===== copio el estilo de las letras del header ===== */
+footer ul li a {
+  color: #FF0000;
+  text-decoration: none;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+}
+
+
+/* ===== Body ===== */
+
+body {
+margin: 0;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+/* ===== Estilo la section inicio ===== */
+.inicio {
+  padding: 4rem 2rem;
+
+}
+
+.nosotros {
+  margin-top: 1rem;
+}
+
+
+
+/*  Estilo de la grid de arriba */
+.grid-container {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+
+  grid-template-areas:
+    "titulo bienvenida bienvenida"
+    "subt-desc subt-desc subt-desc"
+    "comp note insu"
+    "desc desc2 desc3";  
+
+}
+
+.titulo {
+    grid-area: titulo;
+    border: 1px solid blue;
+    justify-items: center;
+
+}
+
+.subtitulo {
+    grid-area: subtitulo;
+    border: 1px solid #ff0015;
+
+}
+.subt-desc {
+    grid-area: subt-desc;
+    border: 1px solid #d400ff;
+
+}
+.subt-expl {
+    grid-area: subt-expl;
+    border: 1px solid #b3ff00;
+
+}
+
+.bienvenida {
+    grid-area: bienvenida;
+    border: 1px solid #00ff40;
+
+}
+
+.note {
+    grid-area: note;
+    border: 1px solid #0c0c0c;
+
+}
+.insu {
+    grid-area: insu;
+    border: 1px solid #0044ff;
+
+}
+.comp {
+    grid-area: comp;
+    border: 1px solid #a09e44;
+}    
+
+/* ===== Aca termina lo de la grid de arriba ===== */
+
+/* ===== contenedor de las imagenes de la section inicio ===== */
+/* ===== Ya no uso mas esto porque lo migro a grid-container ===== */
+/* .div {
+  display: flex;
+  border: 8px solid red;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}*/
+
+/* ===== Aca Empieza el grid de menú ===== */
+.grid-container-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid red;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  grid-template-areas:
+    "menu-compu menu-compu menu-note"
+    "menu-comp menu-comp menu-note";
+}
+
+/*Aca centro los titulos de cada imagen del menu*/
+h3.menu-compu {
+
+  text-align: center;
+}
+
+h3.menu-comp {
+
+  text-align: center;
+}
+
+h3.menu-note {
+
+  text-align: center;
+}
+
+.imagenesIndex {
+ max-width: 50rem;
+ background-color: aqua;
+ padding: 4rem 2rem;
+
+}
+
+.imagenesIndex img {
+  width: 90%;
+
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+      .grid-container p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+  .grid-container.img {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+      .grid-container p {
+        font-size: 1rem;
+    }
+}

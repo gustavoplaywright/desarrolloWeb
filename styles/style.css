@@ -1,0 +1,296 @@
+@import "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Irish+Grover&family=Kablammo&family=League+Gothic&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap";
+
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Headers ===== */
+
+header {
+  position: fixed;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background-color: #000000;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1000;
+
+}
+
+/* ===== El titulo de cada pagina se va a ver asi ===== */
+h1 {
+  font-size: 2rem;
+  font-style: oblique;
+  color: #ff0000;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+}
+
+/* ===== Aca defino la img solamente del logo en cada pagina ===== */
+.logo {
+  width: 700px;
+  height: auto;
+}
+
+/* ===== Esto es de la barra de navegación (Nav) ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  align-items: flex-end;
+
+
+}
+
+nav ul li a {
+  color: #FF0000;
+  text-decoration: none;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+
+}
+
+
+/* ===== Estilado del footer ===== */
+footer {
+  display: flex;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background-color: #000000;
+  justify-content: space-between;
+  color: #FF0000;
+}
+
+/* ===== copio el estilo de las letras del header ===== */
+footer ul li a {
+  color: #FF0000;
+  text-decoration: none;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+}
+
+
+/* ===== Body ===== */
+
+main {
+padding-top: 120px;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+/* ===== Estilo la section inicio ===== */
+.inicio {
+  padding: 4rem 2rem;
+
+}
+
+.nosotros {
+  margin-top: 1rem;
+}
+
+
+
+/*  Estilo de la grid de arriba */
+.grid-container {
+  border: 4px solid #ff0000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  color: #FF0000;
+
+
+  grid-template-areas:
+    "titulo bienvenida bienvenida"
+    "subt-desc subt-desc subt-desc"
+    "comp note insu";
+}
+
+/* el hover */
+.grid-container:hover {
+  background-color: #ffebeb; 
+}
+
+.titulo {
+  grid-area: titulo;
+  color: #030000;
+  justify-items: center;
+
+}
+
+.subtitulo {
+  grid-area: subtitulo;
+  color: #030000;
+
+
+
+}
+
+.subt-desc {
+  grid-area: subt-desc;
+  color: #030000;
+  text-align: center;
+  margin-bottom: 2rem;
+
+
+}
+
+.bienvenida {
+  grid-area: bienvenida;
+
+
+}
+
+.note {
+  grid-area: note;
+
+
+}
+
+.insu {
+  grid-area: insu;
+
+
+}
+
+.comp {
+  grid-area: comp;
+
+}
+
+
+
+/* ===== Aca termina lo de la grid de arriba ===== */
+
+/* ===== contenedor de las imagenes de la section inicio ===== */
+/* ===== Ya no uso mas esto porque lo migro a grid-container ===== */
+/* .div {
+  display: flex;
+  border: 8px solid red;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}*/
+
+/* ===== Aca Empieza el grid de menú ===== */
+.grid-container-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid #ff0000;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  grid-template-areas:
+    "menu-compu menu-compu menu-note"
+    "menu-comp menu-comp menu-note";
+}
+
+/*Aca centro los titulos de cada imagen del menu*/
+h3.menu-compu {
+
+  text-align: center;
+}
+
+h3.menu-comp {
+
+  text-align: center;
+}
+
+h3.menu-note {
+
+  text-align: center;
+}
+
+.imagenesIndex {
+  max-width: 50rem;
+  background-color: #00ffff;
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+
+}
+
+.imagenesIndex img {
+  width: 90%;
+
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .grid-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container.img {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .grid-container p {
+    font-size: 1rem;
+  }
+}
+
+.nosotros h3 {
+  font-size: 1.5rem;
+  font-style: oblique;
+  color: #ff0000;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  text-align:center;
+  margin-bottom: 1rem;
+}
+
+.nosotros {
+  padding: 4rem 6rem;
+  text-align: justify;
+  color: #FF0000;
+  margin-bottom: 2rem;
+}
+
+.imagenesNosotros {
+  max-width: 90rem;
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imagenesNosotros img {
+  width: 90%;
+
+} 
+
+/* el hover en nosotros */
+.nosotros:hover {
+  background-color: #ffebeb; 
+}

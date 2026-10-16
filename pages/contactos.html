@@ -5,67 +5,198 @@
     <meta charset="UTF-8">
     <title>Computadoras</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
     <header class="headerN">
-        <nav class="navN">
-            <h1>CONTACTO</h1>
-            <!-- <h2 class="menuC">Menú</h2> -->
-            <figure>
+            <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+                <figure class="m-0">
                 <img src="../assets/imagenes/logo.JPG" alt="Logo de la empresa" class="logo">
-            </figure>
-            <ul>
+                </figure>
+                <h1 class="m-0">TECH SOLUCIONES</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <!-- Menú de navegación colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
                 <!-- Lista de navegación -->
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/especiales.html">Especiales</a></li>
-                <li><a href="#contactos">Contacto</a></li>
-                
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link "href="../pages/nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/especiales.html">Especiales</a></li>
+                <li class="nav-item"><a class="nav-link  active" href="#contactos">Contacto</a></li>
+
             </ul>
         </nav>
     </header>
     <main>
-        <section class="grid-container-img">
-            <article>
-                <h2>Computadoras</h2>
-                <p>En esta sección encontrarás información sobre nuestras computadoras de última generación, diseñadas
-                    para
-                    ofrecer un rendimiento excepcional y una experiencia de usuario inigualable.</p>
-                <figure class="imagenesIndex">
-                    <img src="../assets/imagenes/computadoras/compus_amd1.jpg" alt="compus_amd1.jpg">
-                    <figcaption>Computadora Gamer<br>Pc Gamer AMD Ryzen 5 3400g<br>Asus B650m<br>32gb Ram<br>1tb Ssd<br>
-                    </figcaption>
-                </figure>
-                <figure class="imagenesIndex">
-                    <img src="../assets/imagenes/computadoras/compus_amd2.jpg" alt="compus_amd2.jpg">
-                    <figcaption>Computadora para Diseño Grafico<br>Pc AMD Ryzen 9 5900x<br>Asus B650m<br>64gb Ram<br>2tb
-                        Ssd<br></figcaption>
-                </figure>
-                <figure class="imagenesIndex">
-                    <img src="../assets/imagenes/computadoras/compus_intel1.jpg" alt="compus_intel1.jpg">
-                    <figcaption>Computadora Gamer INTEL<br>Pc INTEL core I7<br>FS-H61M2<br>32gb Ram<br>480gb Ssd<br>
-                    </figcaption>
-                </figure>
-                <figure class="imagenesIndex">
-                    <img src="../assets/imagenes/computadoras/compus_intel2.jpg" alt="compus_intel2.jpg">
-                    <figcaption>Computadora Trabajo INTEL<br>Pc INTEL core I5<br>FS-H61M2<br>16gb Ram<br>280gb Ssd<br>
-                    </figcaption>
-                </figure>
-                <p>Nuestras computadoras están equipadas con los últimos procesadores, tarjetas gráficas de alto
-                    rendimiento
-                    y almacenamiento rápido, lo que las hace ideales para tareas exigentes como edición de video, diseño
-                    gráfico y juegos.</p>
-                <p>Además, ofrecemos una amplia gama de modelos para satisfacer las necesidades de todos los usuarios,
-                    desde
-                    computadoras de escritorio hasta portátiles ultraligeros. Explora nuestra selección y encuentra la
-                    computadora perfecta para ti.</p>
-            </article>
+        <section class="grid-contactos">
+            <article class="grid-contactos-h2">
+                <h2>Contacto y Soporte</h2>
+                <p>Estamos para ayudarte. Encuentra respuestas rápidas en nuestras preguntas frecuentes o ponte en
+                    contacto directo con nuestro equipo técnico y comercial.</p>
+        </section>
+        <section class="medios-contacto">
+                <h2>Comunicate con nosotros</h2>
+                <div class="contacto-grid">
+                <div class="contacto-card">
+                    <h3>Atención Telefónica</h3>
+                    <p>Llámanos para consultas comerciales o soporte técnico urgente.</p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+541112345678">+54 (11) 1234-5678</a></p>
+                    <p><strong>Horario:</strong> Lunes a Viernes de 9:00 a 18:00 hs</p>
+                </div>
+                <div class="contacto-card">
+                    <h3>Correo Electrónico</h3>
+                    <p>Escríbenos para presupuestos, ventas corporativas o asistencia técnica.</p>
+                    <p><strong>Ventas:</strong> <a href="mailto:ventas@techsoluciones.com">ventas@techsoluciones.com</a></p>
+                    <p><strong>Soporte Técnico:</strong> <a href="mailto:soporte@techsoluciones.com">soporte@techsoluciones.com</a></p>
+                    <p><strong>Información:</strong> <a href="mailto:informacion@techsoluciones.com">informacion@techsoluciones.com</a></p>
+                </div>
+                <div class="contacto-card">
+                    <h3>Nuestras oficinas</h3>
+                    <p>Visítanos en nuestras sucursales para recibir asistencia personalizada.</p>
+                    <p><strong>Dirección:</strong> Av. Siempre Viva 123, Ciudad</p>
+                    <p><strong>Horario:</strong> Lunes a Viernes de 9:00 a 18:00 hs</p>
+                </div>
+                </div>
+        </section>
+        <section class="redes-sociales">
+                <h2>Nuestras Redes y Comunidad</h2>
+                <p>Sigue nuestras novedades, ofertas exclusivas, contenido de soporte y únete a nuestra comunidad de tecnología:</p>              
+                <ul class="redes-list">
+                <li>
+                    <strong>Instagram:</strong> 
+                    <a href="https://instagram.com/techsoluciones">@techsoluciones</a> 
+                    — Promociones, lanzamientos y novedades de stock.
+                </li>
+                <li>
+                    <strong>Facebook:</strong> 
+                    <a href="https://facebook.com/techsoluciones">TechSoluciones Oficial</a> 
+                    — Noticias, eventos y atención a la comunidad.
+                </li>
+                <li>
+                    <strong>X (Twitter):</strong> 
+                    <a href="https://x.com/techsoluciones">@techsoluciones</a> 
+                    — Estado de servicios en tiempo real y novedades tech.
+                </li>
+                <li>
+                    <strong>Discord:</strong> 
+                    <a href="https://discord.gg/techsoluciones">Comunidad TechSoluciones</a> 
+                    — Canal abierto para consultas de hardware, soporte entre pares y chat.
+                </li>
+                <li>
+                    <strong>Patreon:</strong> 
+                    <a href="https://patreon.com/techsoluciones">TechSoluciones Lab</a> 
+                    — Contenido exclusivo, guías de ensamblado avanzadas y sorteos mensuales.
+                </li>
+                <li>
+                    <strong>YouTube:</strong> 
+                    <a href="https://youtube.com/techsoluciones">TechSoluciones TV</a> 
+                    — Unboxings, reviews de componentes y tutoriales de servicio técnico.
+                </li>
+                </ul>
+        </section>
+        <section class="preguntas-frecuentes">
+                <h2>Preguntas Frecuentes (FAQ)</h2>
+                <article class="preguntas">
+                <h3>1. ¿Cuáles son los horarios de atención del servicio técnico?</h3>
+                <p>Nuestro taller de soporte técnico atiende de lunes a viernes de 9:00 a 18:00 hs y sábados de 9:00 a 13:00 hs. Puedes coordinar el ingreso de tu equipo directamente en la sucursal o solicitar retiro a domicilio.</p>
+                </article>
+                <article class="preguntas">
+                <h3>2. ¿Cómo solicito un presupuesto para reparación o ensamblado?</h3>
+                <p>Puedes solicitar un presupuesto sin cargo enviando un correo a <a href="mailto:soporte@techsoluciones.com">soporte@techsoluciones.com</a> indicando las especificaciones de tu equipo y la falla detectada. Si requieres un ensamblado a medida, detallanos el uso principal (gaming, diseño, oficina) y tu presupuesto estimado.</p>
+                </article>
+                <article class="preguntas">
+                <h3>3. ¿Qué medios de pago aceptan para la compra de equipos y servicios?</h3>
+                <p>Aceptamos tarjetas de crédito y débito (Visa, Mastercard, Cabal), transferencias bancarias, mercado pago y efectivo en el local. Contamos con planes de financiación en cuotas fijas para compras de hardware completo.</p>
+                </article>
+                <article class="preguntas">
+                <h3>4. ¿Realizan envíos de productos a todo el país?</h3>
+                <p>Sí, realizamos envíos a todo el territorio nacional a través de correo prioritario y transporte privado con seguimiento en tiempo real. Los envíos dentro de la zona urbana se realizan en el día mediante servicio de mensajería Express.</p>
+                </article>
+                <article class="preguntas">
+                <h3>5. ¿Qué garantía tienen los productos y las reparaciones?</h3>
+                <p>Todos los componentes nuevos cuentan con la garantía oficial del fabricante (mínimo 12 meses). Los servicios de reparación y mantenimiento prestados por nuestro equipo técnico cuentan con una garantía escrita de 90 días sobre el trabajo realizado.</p>
+                </article>
+                <article class="preguntas">
+                <h3>6. ¿Cómo puedo hacer el seguimiento de mi orden de reparación?</h3>
+                <p>Al ingresar un equipo a nuestro taller se te asigna un número de orden. Puedes consultar el estado del diagnóstico o reparación llamando a nuestro teléfono de atención o escribiendo a nuestro canal oficial de soporte con tu número de comprobante.</p>
+                </article>
+                <article class="preguntas">
+                <h3>7. ¿Brindan soporte técnico a empresas y pymes?</h3>
+                <p>Sí, ofrecemos planes de mantenimiento preventivo, soporte remoto y presencial para empresas. Diseñamos esquemas de atención a medida con acuerdos de nivel de servicio (SLA) para garantizar la continuidad operativa de tus sistemas.</p>
+                </article>
+                <article class="preguntas">
+                <h3>8. ¿Qué diferencia hay entre mantenimiento preventivo y correctivo?</h3>
+                <p>El mantenimiento preventivo incluye limpieza física profunda, cambio de pasta térmica y optimización de software para evitar fallas futuras. El mantenimiento correctivo se enfoca en reparar o reemplazar componentes que ya presentan un mal funcionamiento o daño físico.</p>
+                </article>
+                <article class="preguntas">
+                <h3>9. ¿Realizan limpieza interna y cambio de pasta térmica en laptops y PCs?</h3>
+                <p>Sí, es uno de nuestros servicios más solicitados. Recomendamos realizar este procedimiento al menos una vez al año para mantener temperaturas óptimas de funcionamiento, reducir el ruido de los ventiladores y prolongar la vida útil del procesador y la tarjeta gráfica.</p>
+                </article>
+                <article class="preguntas">
+                <h3>10. ¿Puedo llevar mis propios componentes para que ustedes realicen el armado?</h3>
+                <p>¡Absolutamente! Si ya compraste las partes por tu cuenta, puedes traernos los componentes y nuestro equipo técnico se encargará del ensamblado profesional, gestión de cables (cable management), actualización de BIOS e instalación del sistema operativo.</p>
+                </article>
+                <article class="preguntas">
+                <h3>11. ¿Ofrecen servicio técnico a domicilio?</h3>
+                <p>Contamos con visitas técnicas a domicilio para diagnóstico de redes, soporte corporativo e instalación de equipos de escritorio. Para reparaciones complejas que requieran instrumental de taller, coordinamos el retiro y la devolución del equipo en tu domicilio.</p>
+                </article>
+                <article class="preguntas">
+                <h3>12. ¿Tienen local físico para retirar productos o dejar equipos personalmente?</h3>
+                <p>Sí, disponemos de una sucursal con atención al público donde puedes retirar tus compras de hardware, dejar tus equipos para revisión o solicitar asesoramiento presencial con nuestros especialistas.</p>
+                </article>
+                <article class="preguntas">
+                <h3>13. ¿Qué hago si mi computadora no enciende o no da imagen?</h3>
+                <p>Te recomendamos verificar que los cables de alimentación y el monitor estén firmemente conectados. Si el problema persiste, evita forzar el encendido repetidamente y tráenos el equipo para un diagnóstico seguro en nuestro banco de pruebas.</p>
+                </article>
+                <article class="preguntas">
+                <h3>14. ¿Cómo sé qué componentes son compatibles con mi PC actual?</h3>
+                <p>Puedes escribirnos por correo o por nuestro canal de Discord adjuntando el modelo de tu placa madre, procesador y fuente de alimentación. Nuestro equipo evaluará la compatibilidad antes de que realices cualquier compra de actualización.</p>
+                </article>
+                <article class="preguntas">
+                <h3>15. ¿Realizan optimización de software y limpieza de virus o malware?</h3>
+                <p>Sí, ofrecemos formateo, reinstalación limpia de sistemas operativos con licencias oficiales, eliminación profunda de software malicioso y configuración de copias de seguridad (backup) de tus archivos importantes.</p>
+                </article>
+                <article class="preguntas">
+                <h3>16. ¿Qué plazo de entrega tienen los equipos armados a medida?</h3>
+                <p>El armado de una PC completa junto con las pruebas de estabilidad (stress tests) toma entre 24 y 48 horas hábiles desde la confirmación del pedido y la disponibilidad de los componentes.</p>
+                </article>
+                <article class="preguntas">
+                <h3>17. ¿Venden repuestos y componentes sueltos o solo computadoras armadas?</h3>
+                <p>Comercializamos tanto componentes individuales (procesadores, placas de video, memorias RAM, discos SSD, fuentes) como perféricos, accesorios y computadoras preensambladas.</p>
+                </article>
+                <article class="preguntas">
+                <h3>18. ¿Brindan soporte remoto si no puedo acercarme al local?</h3>
+                <p>Sí, para problemas de configuración, instalación de drivers o fallas leves de software, brindamos asistencia remota a través de plataformas de conexión segura previa coordinación de un turno.</p>
+                </article>
+                <article class="preguntas">
+                <h3>19. ¿Emiten factura A o B según la condición fiscal del cliente?</h3>
+                <p>Emitimos factura A para empresas, autónomos y monotributistas, así como factura B para consumidor final. Solo debes indicar tus datos fiscales al momento de concretar la compra o solicitar la reparación.</p>
+                </article>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <h3>Información de contacto</h3>
+            <form action="#" method="POST">
+                Nombre: <input type="text" name="nombre"><br>
+                Celular: <input type="tel" name="celular"><br>
+                Email: <input type="email" name="email"><br>
+                <button type="submit">Enviar</button>
+
+            </form>
+            <p>¡Contáctanos para más información!</p>
         </section>
     </main>
-    <footer class="footer">
+    <footer>
         <p>&copy; 2026 Practicas 07/09. Todos los derechos reservados.</p>
         <p>Siguenos en nuestras redes</p>
         <ul>
@@ -81,6 +212,10 @@
             </li>
         </ul>
     </footer>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

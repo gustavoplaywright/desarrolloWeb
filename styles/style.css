@@ -12,8 +12,8 @@
 
 header {
   position: fixed;
-  padding: 1rem 2rem;
-  gap: 1rem;
+  padding: 16px 32px;
+  gap: 16px;
   background-color: #000000;
   justify-content: space-between;
   width: 100%;
@@ -49,7 +49,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1.5rem;
+  gap: 24px;
   align-items: flex-end;
 
 
@@ -63,12 +63,17 @@ nav ul li a {
 
 }
 
+/*Seteando el color a los botones del header*/
+.navbar-dark .navbar-nav .nav-link {
+  color: #ff0000;
+  font-family: "Archivo Black", sans-serif;
+}
 
 /* ===== Estilado del footer ===== */
 footer {
   display: flex;
-  padding: 1rem 2rem;
-  gap: 1rem;
+  padding: 16px 32px;
+  gap: 16px;
   background-color: #000000;
   justify-content: space-between;
   color: #FF0000;
@@ -96,17 +101,17 @@ body {
 }
 
 h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 /* ===== Estilo la section inicio ===== */
 .inicio {
-  padding: 4rem 2rem;
+  padding: 64px 32px;
 
 }
 
 .nosotros {
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 
@@ -150,7 +155,7 @@ h2 {
   grid-area: subt-desc;
   color: #030000;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 
 
 }
@@ -194,15 +199,15 @@ h2 {
   margin-top: 2rem;
 }*/
 
-/* ===== Aca Empieza el grid de menú ===== */
-.grid-container-img {
+/* ===== Aca Empieza el grid de menú AHORA ES EL DE CONTACTO TAMBIEN ===== */
+.grid-productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 2rem;
+  gap: 24px;
+  padding: 32px;
   border: 1px solid #ff0000;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 32px;
+  margin-top: 32px;
 
   grid-template-areas:
     "menu-compu menu-compu menu-note"
@@ -228,8 +233,8 @@ h3.menu-note {
 .imagenesIndex {
   max-width: 50rem;
   background-color: #00ffff;
-  padding: 4rem 2rem;
-  margin-top: 2rem;
+  padding: 64px 32px;
+  margin-top: 32px;
 
 }
 
@@ -267,11 +272,11 @@ h3.menu-note {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   text-align:center;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .nosotros {
-  padding: 4rem 6rem;
+  padding: 64px 96px;
   text-align: justify;
   color: #FF0000;
   margin-bottom: 2rem;
@@ -293,4 +298,107 @@ h3.menu-note {
 /* el hover en nosotros */
 .nosotros:hover {
   background-color: #ffebeb; 
+}
+
+/*Aca empiezo a estilar la page contacto*/
+/*section contacto*/
+.medios-contacto {
+  padding: 64px 32px;
+  text-align: justify;
+  color: #FF0000;
+  margin-bottom: 2rem;
+}
+
+.contacto-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.contacto-card {
+  min-width: 280px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.contacto-card:hover{
+  background-color: #ffebeb; 
+}
+/*Me copio la grid de productos para mantenerla a ver si pongo algo mas*/
+.grid-contactos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 32px;
+  border: 1px solid #ff0000;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  
+}
+
+.grid-contactos-h2 {
+  color: #FF0000;
+}
+
+.grid-contactos:hover {
+  background-color: #ffebeb; 
+}
+
+/*section redes*/
+.redes-sociales {
+  padding: 64px 32px;
+  text-align: justify;
+  color: #FF0000;
+  margin-bottom: 2rem;
+}
+
+.redes-list {
+  display: flex;
+  gap: 24px;
+}
+
+
+.redes-card {
+  min-width: 280px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.redes-sociales h2 {
+  font-size: 1.5rem;
+  font-style: oblique;
+  color: #ff0000;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  text-align:justify;
+  margin-bottom: 16px;
+}
+
+.redes-sociales p {
+  text-align: justify;
+  color: #FF0000;
+  margin-bottom: 16px;
+}
+
+/*section preguntas*/
+.preguntas-frecuentes {
+  padding: 64px 32px;
+  text-align: justify;
+  color: #FF0000;
+  margin-bottom: 2rem;
+}
+
+.preguntas{
+ padding: 16px;
+}
+
+.preguntas p{
+ padding: 16px;
+}
+
+/*Carousel*/
+.carousel-item img{
+ height: 1200px;
+ width: 50%;
 }

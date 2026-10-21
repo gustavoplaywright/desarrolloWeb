@@ -389,13 +389,17 @@ h3.menu-note {
   margin-bottom: 2rem;
 }
 
-.preguntas{
+.preguntas:hover{
  padding: 16px;
+ background-color: #ffebeb; 
+
 }
 
 .preguntas p{
  padding: 16px;
 }
+
+
 
 /*Carousel*/
 .carousel-item img{

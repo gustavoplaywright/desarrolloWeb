@@ -330,7 +330,7 @@ h3.menu-note {
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   padding: 32px;
-  border: 1px solid #ff0000;
+  border: 1px solid #ff0000; 
   margin-bottom: 32px;
   margin-top: 32px;
   
@@ -399,10 +399,36 @@ h3.menu-note {
  padding: 16px;
 }
 
+.preguntas h3 {
+  font-size: 1.5rem;
+  padding: 12px;
+}
+
+.preguntas-frecuentes h2 {
+  text-align: center;
+}
+
 
 
 /*Carousel*/
 .carousel-item img{
  height: 1200px;
  width: 50%;
+}
+
+.formulario-contacto {
+  padding: 64px 32px;
+  text-align: justify;
+  color: #FF0000;
+  margin-bottom: 2rem;
+  border: 1px solid #ff0000; 
+}
+
+.formulario-contacto h3{
+  font-size: 1.2rem;
+}
+
+.boton {
+   background-color: #FF0000;
+   margin-bottom: 2rem;
 }

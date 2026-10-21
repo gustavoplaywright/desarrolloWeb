@@ -14,25 +14,63 @@
 
 <body>
     <header>
-        <!-- Encabezado de la página -- > -->
-
-        <nav>
-            <h1>TECH SOLUCIONES</h1>
-            <!-- <h2 class="menuC">Menú</h2> -->
-            <figure>
-                <img src="./assets/imagenes/logo.JPG" alt="Logo de la empresa" class="logo">
-            </figure>
-            <ul>
-                <!-- Lista de navegación -->
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/especiales.html">Especiales</a></li>
-                <li><a href="./pages/contactos.html">Contacto</a></li>
-                
-            </ul>
+        <!-- PRUEBA BOOSTRATP HAMBURGUESA -->
+        <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+                    <figure class="m-0">
+                        <img src="./assets/imagenes/logo.JPG" alt="Logo de la empresa" class="logo">
+                    </figure>
+                    <h1 class="m-0">TECH SOLUCIONES</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menú de navegación colapsable -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/especiales.html">Especiales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+    <!-- PRUEBA DE REEMPLAZO DE HEADER POR EL DE BOOTSTRAP -->
+    <!-- <header> -->
+
+
+    <!--     <nav> -->
+    <!--            <h1>TECH SOLUCIONES</h1> -->
+    <!--            <h2 class="menuC">Menú</h2> -->
+    <!--           <figure> -->
+    <!--                <img src="./assets/imagenes/logo.JPG" alt="Logo de la empresa" class="logo"> -->
+    <!--            </figure> -->
+    <!--            <ul> -->
+    <!-- Lista de navegación -->
+    <!--                <li><a href="#inicio">Inicio</a></li> -->
+    <!--                <li><a href="./pages/nosotros.html">Nosotros</a></li> -->
+    <!--                <li><a href="./pages/productos.html">Productos</a></li> -->
+    <!--                <li><a href="./pages/especiales.html">Especiales</a></li> -->
+    <!--                <li><a href="./pages/contactos.html">Contacto</a></li> -->
+    <!--                 -->
+    <!--            </ul> -->
+    <!--        </nav> -->
+    <!--    </header>  -->
     <main>
         <section class="inicio">
             <article class="grid-container">
@@ -70,7 +108,12 @@
                 </p>
             </article>
         </section>
-        <div class="grid-container-img">
+
+
+        <!-- Aca voy a reemplazar la grilla de imagenes por un carrusel   
+       
+       
+        <div class="grid-container-img"> 
             <article class="imagenesIndex">
                 <figure>
                     <img src="./assets/imagenes/noteIni.jpg" alt="Notebook">
@@ -107,8 +150,55 @@
                     <figcaption>RAM</figcaption>
                 </figure>
             </article>
-        </div>
-        <section>
+        </div> -->
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- imágenes -->
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="./assets/imagenes/ram.jpg" class="d-block w-100" alt="Memoria RAM">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Memorias RAM</h5>
+                        <p>Potencia y velocidad para tu equipo.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./assets/imagenes/cpu.jpg" class="d-block w-100" alt="Procesador CPU">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Procesadores</h5>
+                        <p>La última generación de CPUs del mercado.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./assets/imagenes/noteIni.jpg" class="d-block w-100" alt="Notebooks">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Notebooks</h5>
+                        <p>Equipos portátiles para trabajo y gaming.</p>
+                    </div>
+                </div>
+            </div> 
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div> 
+        <section class="nosotros">
             <h2>Promociones Exclusivas y Experiencia de Compra Única</h2>
             <p>Al recorrer el sitio, encontrarás una sección dedicada a las Ofertas de la Semana y promociones
                 exclusivas para compras web. Queremos que tu experiencia sea ágil y segura: la plataforma incluye
@@ -124,18 +214,7 @@
                 verdaderamente comprometido. ¡Tu próxima actualización tecnológica comienza aquí!</p>
         </section>
 
-        <section>
-            <h2>Contacto</h2>
-            <h3>Información de contacto</h3>
-            <form action="#" method="POST">
-                Nombre: <input type="text" name="nombre"><br>
-                Celular: <input type="tel" name="celular"><br>
-                Email: <input type="email" name="email"><br>
-                <button type="submit">Enviar</button>
 
-            </form>
-            <p>¡Contáctanos para más información!</p>
-        </section>
 
     </main>
     <footer>

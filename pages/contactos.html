@@ -184,15 +184,54 @@
                 <h3 data-bs-toggle="collapse" data-bs-target="#faq19" style="cursor: pointer;">19. ¿Emiten factura A o B según la condición fiscal del cliente?</h3>
                 <p id="faq19" class="collapse">Emitimos factura A para empresas, autónomos y monotributistas, así como factura B para consumidor final. Solo debes indicar tus datos fiscales al momento de concretar la compra o solicitar la reparación.</p>
                 </article>
+                <article class="preguntas">
+                <h3 data-bs-toggle="collapse" data-bs-target="#faq20" style="cursor: pointer;">20. ¿Puedo actualizar solo algunos componentes de mi PC actual (Upgrades)?</h3>
+                <p id="faq20" class="collapse">Sí, evaluamos tu equipo sin costo para aconsejarte qué componentes conviene actualizar (como sumar memoria RAM o instalar un disco SSD) para mejorar el rendimiento general sin necesidad de gastar en una PC totalmente nueva.</p>
+                </article>
+                <article class="preguntas">
+                <h3 data-bs-toggle="collapse" data-bs-target="#faq21" style="cursor: pointer;">21. ¿Qué debo hacer antes de entregar mi equipo para servicio técnico?</h3>
+                <p id="faq21" class="collapse">Te recomendamos realizar una copia de seguridad (backup) de tus archivos personales si te es posible y retirar contraseñas de inicio de sesión o indicárselas al técnico para facilitar las pruebas de diagnóstico.</p>
+                </article>
+                <article class="preguntas">
+                <h3 data-bs-toggle="collapse" data-bs-target="#faq22" style="cursor: pointer;">22. ¿Realizan reparación de placas de video (GPU) y cambio de thermal pads?</h3>
+                <p id="faq22" class="collapse">Sí, contamos con equipamiento para mantenimiento preventivo y reparación avanzada de placas de video, incluyendo reballing, cambio de componentes electrónicos dañados y reemplazo de thermal pads de alta calidad.</p>
+                </article>
+                </article>
+                <article class="preguntas">
+                <h3 data-bs-toggle="collapse" data-bs-target="#faq23" style="cursor: pointer;">23. ¿Qué sucede si mi equipo no tiene reparación o el presupuesto resulta inviable?</h3>
+                <p id="faq23" class="collapse">En caso de que el diagnóstico determine que la reparación no es técnicamente viable o supera el valor del equipo, te notificaremos de inmediato. Puedes retirar el equipo sin costo o solicitar una cotización con descuento para un recambio de hardware.</p>
+                </article>
+                <article class="preguntas">
+                <h3 data-bs-toggle="collapse" data-bs-target="#faq24" style="cursor: pointer;">24. ¿Tienen programa de cambio o toman componentes usados en parte de pago?</h3>
+                <p id="faq24" class="collapse">Aceptamos determinados componentes usados (como placas de video o procesadores de generaciones recientes) como parte de pago previo testeo y peritaje funcional por parte de nuestros técnicos en el taller.</p>
+                </article>
+                <article class="preguntas">
+                <h3 data-bs-toggle="collapse" data-bs-target="#faq25" style="cursor: pointer;">25. ¿Cómo recupero datos si mi disco duro o SSD dejó de funcionar?</h3>
+                <p id="faq25" class="collapse">Ofrecemos servicio de recuperación de datos a nivel lógico y físico. Evaluamos la unidad para determinar si la pérdida se debe a fallas de archivos o daños mecánicos/electrónicos y te presentamos las opciones de extracción disponibles.</p>
+                </article>
         </section>
-        <section>
+        <section class="formulario-contacto">
             <h2>Contacto</h2>
             <h3>Información de contacto</h3>
             <form action="#" method="POST">
-                Nombre: <input type="text" name="nombre"><br>
-                Celular: <input type="tel" name="celular"><br>
-                Email: <input type="email" name="email"><br>
-                <button type="submit">Enviar</button>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingNombre" placeholder="Nombre Apellido">
+                    <label for="floatingNombre">Nombre y Apellido</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="floatingTel" placeholder="112345678">
+                    <label for="floatingTel">Celular (ej: 112345678)</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="mail@mail.com">
+                    <label for="floatingEmail">Email</label>
+                </div>
+                <div class="mb-3">
+                <label for="mensaje" class="form-label text-danger">Consulta</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu consulta o detalle del equipo aquí..."></textarea>
+                </div>
+                <button class="boton" type="submit">Enviar</button>
+                
 
             </form>
             <p>¡Contáctanos para más información!</p>

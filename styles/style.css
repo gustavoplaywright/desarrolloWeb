@@ -432,3 +432,9 @@ h3.menu-note {
    background-color: #FF0000;
    margin-bottom: 2rem;
 }
+
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 250px;        /* Reduce la altura para que no ocupe toda la pantalla del celular */
+  }
+}

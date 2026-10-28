@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+
+main {
+padding-top: 120px;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  margin-bottom: 32px;
+}
+
+/* ===== El titulo de cada pagina se va a ver asi ===== */
+h1 {
+  font-size: 2rem;
+  font-style: oblique;
+  color: #ff0000;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+}
+

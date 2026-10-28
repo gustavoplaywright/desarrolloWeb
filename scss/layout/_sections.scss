@@ -1,0 +1,58 @@
+/* ===== Estilo la section inicio ===== */
+.inicio {
+  padding: 64px 32px;
+
+}
+
+.nosotros {
+  margin-top: 16px;
+
+  /* el hover */
+    &hover {
+  background-color: #ffebeb; 
+} 
+
+.nosotros h3 {
+  font-size: 1.5rem;
+  font-style: oblique;
+  color: #ff0000;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  text-align:center;
+  margin-bottom: 16px;
+}
+
+
+}
+
+.medios-contacto {
+  padding: 64px 32px;
+  text-align: justify;
+  color: #FF0000;
+  margin-bottom: 2rem;
+}
+
+/*section redes*/
+.redes-sociales {
+  padding: 64px 32px;
+  text-align: justify;
+  color: #FF0000;
+  margin-bottom: 2rem;
+}
+
+/*section preguntas*/
+.preguntas-frecuentes {
+  padding: 64px 32px;
+  text-align: justify;
+  color: #FF0000;
+  margin-bottom: 2rem;
+}
+
+/*section faq*/
+.formulario-contacto {
+  padding: 64px 32px;
+  text-align: justify;
+  color: #FF0000;
+  margin-bottom: 2rem;
+  border: 1px solid #ff0000; 
+}

@@ -1,0 +1,71 @@
+/*  Estilo de la grid de arriba */
+.grid-container {
+  border: 4px solid #ff0000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  color: #FF0000;
+
+
+  grid-template-areas:
+    "titulo bienvenida bienvenida"
+    "subt-desc subt-desc subt-desc"
+    "comp note insu";
+
+    /* el hover */
+        &:hover {
+  background-color: #ffebeb; 
+}
+
+.titulo {
+  grid-area: titulo;
+  color: #030000;
+  justify-items: center;
+
+}
+
+.subtitulo {
+  grid-area: subtitulo;
+  color: #030000;
+
+
+
+}
+
+.subt-desc {
+  grid-area: subt-desc;
+  color: #030000;
+  text-align: center;
+  margin-bottom: 32px;
+
+
+}
+
+.bienvenida {
+  grid-area: bienvenida;
+
+
+}
+
+.note {
+  grid-area: note;
+
+
+}
+
+.insu {
+  grid-area: insu;
+
+
+}
+
+.comp {
+  grid-area: comp;
+
+}
+
+}
+
+
+
+

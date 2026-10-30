@@ -1,9 +1,11 @@
+@use "../utilities/_variables" as *;
+
 /* ===== Estilado del footer ===== */
 footer {
   display: flex;
   padding: 16px 32px;
   gap: 16px;
-  background-color: #000000;
+  background-color: $color-dark;
   justify-content: space-between;
   color: #FF0000;
 

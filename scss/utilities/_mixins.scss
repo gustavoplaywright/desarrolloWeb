@@ -1,0 +1,18 @@
+@use "variables" as *;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin card-style {
+  min-width: 280px;
+  padding: 16px;
+  border: 1px solid $color-border-light;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: $color-hover-bg;
+  }
+}

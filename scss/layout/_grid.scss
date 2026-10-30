@@ -69,3 +69,46 @@
 
 
 
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 32px;
+  border: 1px solid #ff0000;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  grid-template-areas:
+    "menu-compu menu-compu menu-note"
+    "menu-comp menu-comp menu-note";
+}
+
+h3.menu-compu, h3.menu-comp, h3.menu-note {
+  text-align: center;
+}
+
+
+.grid-contactos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 32px;
+  border: 1px solid #ff0000; 
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.grid-contactos:hover {
+  background-color: #ffebeb; 
+}
+
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .grid-container p {
+    font-size: 1rem;
+  }
+}

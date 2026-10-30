@@ -1,0 +1,15 @@
+@use "../utilities/_variables" as *;
+@use "../utilities/_mixins" as *;
+
+.contacto-card, .redes-card {
+  @include card-style;
+}
+
+.carousel-item img {
+  height: 1200px;
+  width: 50%;
+
+  @media (max-width: 767px) {
+    height: 250px;
+  }
+} 

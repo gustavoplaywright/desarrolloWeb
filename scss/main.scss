@@ -1,59 +1,18 @@
-@use "./utilities/_base";
-@use "./layout/_header";
-@use "./layout/_footer";
-@use "./layout/_nav";
-@use "./layout/_grid.scss";
+// 1. Utilities
+@use "utilities/_variables";
+@use "utilities/_mixins";
 
+// 2. Base (Reset y globales mínimos)
+@use "base/_base";
+@use "base/_tipografia";
 
+// 3. Layout (Estructura de las páginas HTML, Header, Nav, Footer, Grids y Secciones)
+@use "layout/_header";
+@use "layout/_nav";
+@use "layout/_footer";
+@use "layout/_grid";
+@use "layout/_sections";
 
-
-
-
-
-/* ===== Body ===== */
-
-main {
-padding-top: 120px;
-}
-
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-}
-
-h2 {
-  margin-bottom: 32px;
-}
-
-/* ===== Estilo la section inicio ===== */
-.inicio {
-  padding: 64px 32px;
-
-}
-
-.nosotros {
-  margin-top: 16px;
-}
-
-/*  Estilo de la grid de arriba */
-.grid-container {
-  border: 4px solid #ff0000;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  color: #FF0000;
-
-
-  grid-template-areas:
-    "titulo bienvenida bienvenida"
-    "subt-desc subt-desc subt-desc"
-    "comp note insu";
-
-    /* el hover */
-.grid-container:hover {
-  background-color: #ffebeb; 
-}
-}
-
-
+// 4. Components (Componentes específicos reutilizables)
+@use "components/_buttons";
+@use "components/_cards";

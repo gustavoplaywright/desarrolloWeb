@@ -1,32 +1,35 @@
+@use "../utilities/_variables" as *;
+
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
 
 
-  nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 24px;
-  align-items: flex-end;
+  ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 24px;
+        align-items: flex-end;
 
-nav ul li a {
-  color: #FF0000;
-  text-decoration: none;
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
+        li {
+          a {
+        color: $color-primary;
+        text-decoration: none;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
 
-}
+            }
 
-}
-
+          }
+       } 
+    }     
 /*Seteando el color a los botones del header*/
 .navbar-dark .navbar-nav .nav-link {
-  color: #ff0000;
+  color: $color-primary;
   font-family: "Archivo Black", sans-serif;
 }
 
-}

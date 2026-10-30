@@ -47,7 +47,7 @@
 .medios-contacto {
   padding: 64px 32px;
   text-align: justify;
-  color: #FF0000;
+  color: $color-primary;
   margin-bottom: 2rem;
 }
 
@@ -55,7 +55,7 @@
 .redes-sociales {
   padding: 64px 32px;
   text-align: justify;
-  color: #FF0000;
+  color: $color-primary;
   margin-bottom: 2rem;
 }
 
@@ -63,7 +63,7 @@
 .preguntas-frecuentes {
   padding: 64px 32px;
   text-align: justify;
-  color: #FF0000;
+  color: $color-primary;
   margin-bottom: 2rem;
 }
 
@@ -71,15 +71,15 @@
 .formulario-contacto {
   padding: 64px 32px;
   text-align: justify;
-  color: #FF0000;
+  color: $color-primary;
   margin-bottom: 2rem;
-  border: 1px solid #ff0000; 
+  border: 1px solid $color-primary; 
 }
 
 
 .imagenesIndex {
   max-width: 50rem;
-  background-color: #00ffff;
+  background-color: #00ffff; /*sin cambio aun porque tengo que trabajar esa pagina*/
   padding: 64px 32px;
   margin-top: 32px;
 }
@@ -109,7 +109,7 @@
 .redes-sociales h2 {
   font-size: 1.5rem;
   font-style: oblique;
-  color: #ff0000;
+  color: $color-primary;
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   text-align: justify;
@@ -118,13 +118,13 @@
 
 .redes-sociales p {
   text-align: justify;
-  color: #FF0000;
+  color: $color-primary;
   margin-bottom: 16px;
 }
 
 .preguntas:hover {
   padding: 16px;
-  background-color: #ffebeb; 
+  background-color: $color-hover-bg; 
 }
 
 .preguntas p {

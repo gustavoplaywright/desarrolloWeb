@@ -7,11 +7,11 @@ footer {
   gap: 16px;
   background-color: $color-dark;
   justify-content: space-between;
-  color: #FF0000;
+  color: $color-primary;
 
   /* ===== copio el estilo de las letras del header ===== */
 footer ul li a {
-  color: #FF0000;
+  color: $color-primary;
   text-decoration: none;
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;

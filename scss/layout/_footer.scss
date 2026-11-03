@@ -5,7 +5,8 @@ footer {
   display: flex;
   padding: 16px 32px;
   gap: 16px;
-  background-color: $color-dark;
+  background: linear-gradient(to right, #080808, #bdc4c4);
+  /*background-color: $color-dark;*/
   justify-content: space-between;
   color: $color-primary;
 

@@ -4,7 +4,7 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        background: linear-gradient(to right, #080808, #bdc4c4);
 
 
   ul {
@@ -31,5 +31,6 @@ nav {
 .navbar-dark .navbar-nav .nav-link {
   color: $color-primary;
   font-family: "Archivo Black", sans-serif;
+  
 }
 

@@ -40,15 +40,17 @@
 }
 
 
-
-
-
 /*section contacto*/
 .medios-contacto {
   padding: 64px 32px;
   text-align: justify;
   color: $color-primary;
   margin-bottom: 2rem;
+}
+
+.contacto-grid, .redes-list {
+  display: flex;
+  gap: 24px;
 }
 
 /*section redes*/
@@ -101,10 +103,7 @@
 }
 
 
-.contacto-grid, .redes-list {
-  display: flex;
-  gap: 24px;
-}
+
 
 .redes-sociales h2 {
   font-size: 1.5rem;

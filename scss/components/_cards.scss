@@ -3,6 +3,10 @@
 
 .contacto-card, .redes-card {
   @include card-style;
+    &:hover {
+    background-color: $color-hover-bg; 
+    transform: scale(1.05);
+  }
 }
 
 .carousel-item img {

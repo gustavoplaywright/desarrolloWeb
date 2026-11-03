@@ -52,6 +52,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(to right, #080808, #bdc4c4);
 }
 nav ul {
   display: flex;
@@ -79,7 +80,8 @@ footer {
   display: flex;
   padding: 16px 32px;
   gap: 16px;
-  background-color: #000000;
+  background: linear-gradient(to right, #080808, #bdc4c4);
+  /*background-color: $color-dark;*/
   justify-content: space-between;
   color: #ff0000;
   /* ===== copio el estilo de las letras del header ===== */
@@ -212,6 +214,11 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   margin-bottom: 2rem;
 }
 
+.contacto-grid, .redes-list {
+  display: flex;
+  gap: 24px;
+}
+
 /*section redes*/
 .redes-sociales {
   padding: 64px 32px;
@@ -258,11 +265,6 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 
 .imagenesNosotros img {
   width: 90%;
-}
-
-.contacto-grid, .redes-list {
-  display: flex;
-  gap: 24px;
 }
 
 .redes-sociales h2 {
@@ -316,6 +318,10 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 }
 .contacto-card:hover, .redes-card:hover {
   background-color: #ffebeb;
+}
+.contacto-card:hover, .redes-card:hover {
+  background-color: #ffebeb;
+  transform: scale(1.05);
 }
 
 .carousel-item img {

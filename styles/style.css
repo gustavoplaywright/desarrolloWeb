@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Irish+Grover&family=Kablammo&family=League+Gothic&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap";
+/* #ffebeb;*/
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  background: radial-gradient(circle, #4facfe, #0d1b2a);
 }
 body h2 {
   margin-bottom: 32px;
@@ -104,7 +106,7 @@ footer footer ul li a {
   /* el hover */
 }
 .grid-container:hover {
-  background-color: #ffebeb;
+  background-color: #c0b9b9;
 }
 .grid-container .titulo {
   grid-area: titulo;
@@ -160,7 +162,7 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 }
 
 .grid-contactos:hover {
-  background-color: #ffebeb;
+  background-color: #c0b9b9;
 }
 
 @media (min-width: 1024px) {
@@ -175,6 +177,7 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 /* ===== Estilo la section inicio ===== */
 .inicio {
   padding: 64px 32px;
+  background-color: #f8f9fa;
 }
 
 .nosotros {
@@ -195,7 +198,7 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   /*el hover*/
 }
 .nosotros:hover {
-  background-color: #ffebeb;
+  background-color: #c0b9b9;
 }
 .nosotros h3 {
   font-size: 1.5rem;
@@ -285,7 +288,7 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 
 .preguntas:hover {
   padding: 16px;
-  background-color: #ffebeb;
+  background-color: #c0b9b9;
 }
 
 .preguntas p {
@@ -317,10 +320,10 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   border-radius: 8px;
 }
 .contacto-card:hover, .redes-card:hover {
-  background-color: #ffebeb;
+  background-color: #c0b9b9;
 }
 .contacto-card:hover, .redes-card:hover {
-  background-color: #ffebeb;
+  background-color: #c0b9b9;
   transform: scale(1.05);
 }
 

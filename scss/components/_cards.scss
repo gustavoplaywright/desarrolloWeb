@@ -3,9 +3,14 @@
 
 .contacto-card, .redes-card {
   @include card-style;
+      animation-name:shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     &:hover {
     background-color: $color-hover-bg; 
     transform: scale(1.05);
+
   }
 }
 

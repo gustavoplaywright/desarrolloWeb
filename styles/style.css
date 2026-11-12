@@ -205,17 +205,8 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   color: #ff0000;
   text-align: center;
 }
-.nosotros .especiales {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  padding: 32px;
-  border: 1px solid #ff0000;
-  margin-bottom: 32px;
-  margin-top: 32px;
-}
 .nosotros {
-  /*el hover
+  /*el hover por ahora no lo quiero
   &:hover {
     background-color: $color-hover-bg; 
     transform: translateY(-3px);
@@ -328,6 +319,44 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   font-size: 1.2rem;
 }
 
+/*KEYFRAMES*/
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 60% {
+    transform: translateX(-6px);
+  }
+  40%, 80% {
+    transform: translateX(6px);
+  }
+}
+.figures img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.figures {
+  /*&:hover {
+    transform: scale(1.2);
+  }*/
+}
+
 .boton {
   background-color: #ff0000;
   margin-bottom: 2rem;
@@ -341,6 +370,12 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 }
 .contacto-card:hover, .redes-card:hover {
   background-color: #c0b9b9;
+}
+.contacto-card, .redes-card {
+  animation-name: shake;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .contacto-card:hover, .redes-card:hover {
   background-color: #c0b9b9;

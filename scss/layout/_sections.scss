@@ -21,12 +21,14 @@
 
   h2 {
     color: $color-primary;
+    text-align: center;
   }
 
 
   /*el hover*/
   &:hover {
     background-color: $color-hover-bg; 
+    transform: translateY(-3px);
   }
 
   h3 {

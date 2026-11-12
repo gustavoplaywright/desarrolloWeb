@@ -193,12 +193,14 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 }
 .nosotros h2 {
   color: #ff0000;
+  text-align: center;
 }
 .nosotros {
   /*el hover*/
 }
 .nosotros:hover {
   background-color: #c0b9b9;
+  transform: translateY(-3px);
 }
 .nosotros h3 {
   font-size: 1.5rem;

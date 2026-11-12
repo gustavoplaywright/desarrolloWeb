@@ -16,3 +16,6 @@
 // 4. Components (Componentes específicos reutilizables)
 @use "components/_buttons";
 @use "components/_cards";
+
+// 5. Mediaqueries (Estilos específicos para diferentes tamaños de pantalla)
+@use "utilities/mediaqueries";

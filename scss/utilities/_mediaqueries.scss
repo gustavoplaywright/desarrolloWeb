@@ -1,0 +1,51 @@
+@use "variables" as *;
+
+/* MEDIA QUERIES - DISEÑO RESPONSIVE */
+
+/* hasta 992px */
+@media (max-width: 992px) {
+  .nosotros {
+    padding: 32px 32px; 
+  }
+
+
+  .grid-productos,
+  .grilla-especiales {
+    gap: 16px;
+    padding: 16px;
+  }
+}
+
+/* hasta 768px */
+@media (max-width: 768px) {
+  
+  .grid-productos,
+  .grilla-especiales {
+    grid-template-columns: 1fr;
+  }
+
+  .nosotros {
+    padding: 24px 16px; 
+    margin-top: 8px;
+    
+    h2 {
+      font-size: 1.5rem; 
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* hasta 480px*/
+@media (max-width: 480px) {
+  .nosotros {
+    padding: 16px 12px;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}

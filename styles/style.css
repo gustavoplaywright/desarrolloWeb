@@ -221,10 +221,28 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 }
 
 /*section contacto*/
-.medios-contacto {
+.medios-contacto,
+.redes-sociales,
+.preguntas-frecuentes,
+.formulario-contacto {
   padding: 64px 32px;
   text-align: justify;
   color: #ff0000;
+  margin-bottom: 2rem;
+}
+
+.medios-contacto,
+.redes-sociales,
+.preguntas-frecuentes,
+.formulario-contacto {
+  gap: 24px;
+}
+
+/*reemplazo por el extend
+.medios-contacto {
+  padding: 64px 32px;
+  text-align: justify;
+  color: $color-primary;
   margin-bottom: 2rem;
 }
 
@@ -233,31 +251,31 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   gap: 24px;
 }
 
-/*section redes*/
+/*section redes
 .redes-sociales {
   padding: 64px 32px;
   text-align: justify;
-  color: #ff0000;
+  color: $color-primary;
   margin-bottom: 2rem;
 }
 
-/*section preguntas*/
+/*section preguntas
 .preguntas-frecuentes {
   padding: 64px 32px;
   text-align: justify;
-  color: #ff0000;
+  color: $color-primary;
   margin-bottom: 2rem;
 }
 
-/*section faq*/
+/*section faq
 .formulario-contacto {
   padding: 64px 32px;
   text-align: justify;
-  color: #ff0000;
+  color: $color-primary;
   margin-bottom: 2rem;
-  border: 1px solid #ff0000;
+  border: 1px solid $color-primary; 
 }
-
+*/
 .imagenesIndex {
   max-width: 50rem;
   padding: 64px 32px;
@@ -314,8 +332,11 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   text-align: center;
 }
 
-.formulario-contacto h3 {
+/*.formulario-contacto h3 {
   font-size: 1.2rem;
+}*/
+.formulario-contacto {
+  border: 1px solid #ff0000;
 }
 
 /*KEYFRAMES*/
@@ -388,6 +409,46 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 @media (max-width: 767px) {
   .carousel-item img {
     height: 250px;
+  }
+}
+
+/* MEDIA QUERIES - DISEÑO RESPONSIVE */
+/* hasta 992px */
+@media (max-width: 992px) {
+  .nosotros {
+    padding: 32px 32px;
+  }
+  .grid-productos,
+  .grilla-especiales {
+    gap: 16px;
+    padding: 16px;
+  }
+}
+/* hasta 768px */
+@media (max-width: 768px) {
+  .grid-productos,
+  .grilla-especiales {
+    grid-template-columns: 1fr;
+  }
+  .nosotros {
+    padding: 24px 16px;
+    margin-top: 8px;
+  }
+  .nosotros h2 {
+    font-size: 1.5rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* hasta 480px*/
+@media (max-width: 480px) {
+  .nosotros {
+    padding: 16px 12px;
+  }
+  p {
+    font-size: 0.95rem;
   }
 }
 

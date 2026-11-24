@@ -6,13 +6,13 @@
   align-items: center;
 }
 
-@mixin card-style {
-  min-width: 280px;
-  padding: 16px;
-  border: 1px solid $color-border-light;
-  border-radius: 8px;
+@mixin card-style($min-width: 280px, $padding: 16px) {
+min-width: $min-width;
+padding: $padding;
+border: 1px solid $color-border-light;
+border-radius: 8px;
 
-  &:hover {
-    background-color: $color-hover-bg;
-  }
+&:hover {
+background-color: $color-hover-bg;
+}
 }

@@ -43,6 +43,24 @@
 
 
 /*section contacto*/
+%text-section {
+  padding: $spacing-unit * 8 $spacing-unit * 4;
+  text-align: justify;
+  color: $color-primary;
+  margin-bottom: 2rem;
+}
+
+.medios-contacto,
+.redes-sociales,
+.preguntas-frecuentes,
+.formulario-contacto {
+  @extend %text-section;
+  gap: $spacing-unit * 3;
+}
+
+
+
+/*reemplazo por el extend
 .medios-contacto {
   padding: 64px 32px;
   text-align: justify;
@@ -55,7 +73,7 @@
   gap: 24px;
 }
 
-/*section redes*/
+/*section redes
 .redes-sociales {
   padding: 64px 32px;
   text-align: justify;
@@ -63,7 +81,7 @@
   margin-bottom: 2rem;
 }
 
-/*section preguntas*/
+/*section preguntas
 .preguntas-frecuentes {
   padding: 64px 32px;
   text-align: justify;
@@ -71,7 +89,7 @@
   margin-bottom: 2rem;
 }
 
-/*section faq*/
+/*section faq
 .formulario-contacto {
   padding: 64px 32px;
   text-align: justify;
@@ -79,7 +97,7 @@
   margin-bottom: 2rem;
   border: 1px solid $color-primary; 
 }
-
+*/
 
 .imagenesIndex {
   max-width: 50rem;
@@ -143,8 +161,12 @@
   text-align: center;
 }
 
-.formulario-contacto h3 {
+/*.formulario-contacto h3 {
   font-size: 1.2rem;
+}*/
+
+.formulario-contacto {
+  border: 1px solid $color-primary;
 }
 
 /*KEYFRAMES*/

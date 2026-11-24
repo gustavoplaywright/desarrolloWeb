@@ -12,7 +12,22 @@ header {
 }
 
 
-.logo {
+/*.logo {
   width: 700px;
   height: auto;
+}*/
+
+.logo {
+width: clamp(64px, 12vw, 150px);
+height: auto;
+}
+
+@media (max-width: 767px) {
+header {
+padding: 8px 12px;
+}
+
+header .navbar-brand h1 {
+font-size: 1rem;
+}
 }

@@ -217,5 +217,13 @@ border: 1px solid $color-primary;
     }*/
   }
 
-
+@media (max-width: 767px) {
+.inicio,
+.medios-contacto,
+.redes-sociales,
+.preguntas-frecuentes,
+.formulario-contacto {
+padding: 24px 16px;
+}
+}
 

@@ -107,6 +107,14 @@ footer footer ul li a {
   font-weight: 400;
 }
 
+@media (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+  }
+}
 /*  Estilo de la grid de arriba */
 .grid-container {
   /*border: 4px solid $color-primary;*/
@@ -195,6 +203,20 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   margin-top: 32px;
 }
 
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "subt-desc" "bienvenida" "comp" "note" "insu";
+  }
+  .grid-contactos {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+  .contacto-grid,
+  .redes-list {
+    flex-direction: column;
+  }
+}
 /* ===== Estilo la section inicio ===== */
 .inicio {
   padding: 64px 32px;
@@ -392,6 +414,15 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   }*/
 }
 
+@media (max-width: 767px) {
+  .inicio,
+  .medios-contacto,
+  .redes-sociales,
+  .preguntas-frecuentes,
+  .formulario-contacto {
+    padding: 24px 16px;
+  }
+}
 .boton {
   background-color: #ff0000;
   margin-bottom: 2rem;

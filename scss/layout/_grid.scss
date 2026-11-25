@@ -125,3 +125,26 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
     margin-bottom: 32px;
     margin-top: 32px;
   }
+
+  @media (max-width: 767px) {
+.grid-container {
+grid-template-columns: 1fr;
+grid-template-areas:
+"titulo"
+"subt-desc"
+"bienvenida"
+"comp"
+"note"
+"insu";
+}
+
+.grid-contactos {
+grid-template-columns: 1fr;
+padding: 16px;
+}
+
+.contacto-grid,
+.redes-list {
+flex-direction: column;
+}
+}

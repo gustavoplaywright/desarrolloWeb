@@ -3,7 +3,7 @@
 /* ===== Estilo la section inicio ===== */
 .inicio {
   padding: 64px 32px;
-  /*background-color: #f8f9fa;*/
+
 }
 
 .nosotros {
@@ -25,11 +25,6 @@
   }
 
 
-  /*el hover por ahora no lo quiero
-  &:hover {
-    background-color: $color-hover-bg; 
-    transform: translateY(-3px);
-  }*/
 
   h3 {
     font-size: 1.5rem;
@@ -80,45 +75,6 @@ border: 1px solid $color-primary;
 }
 
 
-
-/*reemplazo por el extend
-.medios-contacto {
-  padding: 64px 32px;
-  text-align: justify;
-  color: $color-primary;
-  margin-bottom: 2rem;
-}
-
-.contacto-grid, .redes-list {
-  display: flex;
-  gap: 24px;
-}
-
-/*section redes
-.redes-sociales {
-  padding: 64px 32px;
-  text-align: justify;
-  color: $color-primary;
-  margin-bottom: 2rem;
-}
-
-/*section preguntas
-.preguntas-frecuentes {
-  padding: 64px 32px;
-  text-align: justify;
-  color: $color-primary;
-  margin-bottom: 2rem;
-}
-
-/*section faq
-.formulario-contacto {
-  padding: 64px 32px;
-  text-align: justify;
-  color: $color-primary;
-  margin-bottom: 2rem;
-  border: 1px solid $color-primary; 
-}
-*/
 
 .imagenesIndex {
   max-width: 50rem;
@@ -224,10 +180,7 @@ border: 1px solid $color-primary;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
-   
-    /*&:hover {
-      transform: scale(1.2);
-    }*/
+
   }
 
 @media (max-width: 767px) {

@@ -11,14 +11,8 @@ header {
 
 }
 
-
-/*.logo {
-  width: 700px;
-  height: auto;
-}*/
-
 .logo {
-width: clamp(64px, 12vw, 150px);
+width: clamp(48px, 6vw, 80px);
 height: auto;
 }
 

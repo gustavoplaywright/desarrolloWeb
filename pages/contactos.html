@@ -10,7 +10,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- ANIMATE  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <!-- FUENTE DE GOOGLE-->
+    <!-- FUENTE DE GOOGLE-->
      <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Irish+Grover&family=Kablammo&family=League+Gothic&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
@@ -20,7 +20,7 @@
     <header class="headerN">
             <nav class="navbar navbar-expand-lg bg-black navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html#inicio">
                 <figure class="m-0">
                 <img src="../assets/imagenes/logo.JPG" alt="Logo de la empresa" class="logo">
                 </figure>
@@ -34,38 +34,41 @@
                 <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
                 <!-- Lista de navegación -->
                 <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link "href="../pages/nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/nosotros.html">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="../pages/productos.html">Productos</a></li>
                 <li class="nav-item"><a class="nav-link" href="../pages/especiales.html">Especiales</a></li>
                 <li class="nav-item"><a class="nav-link  active" href="#contactos">Contacto</a></li>
 
-            </ul>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="grid-contactos">
+        <section class="grid-contactos" id="contactos">
             <article class="grid-contactos-h2">
-                <h2>Contacto y Soporte</h2>
+                <h2 class="animate__animated animate__fadeInDown">Contacto y Soporte</h2>
                 <p>Estamos para ayudarte. Encuentra respuestas rápidas en nuestras preguntas frecuentes o ponte en
                     contacto directo con nuestro equipo técnico y comercial.</p>
+            </article>
         </section>
         <section class="medios-contacto">
                 <h2>Comunicate con nosotros</h2>
                 <div class="contacto-grid">
-                <div class="contacto-card">
+                <div class="contacto-card animate__animated animate__fadeInUp">
                     <h3>Atención Telefónica</h3>
                     <p>Llámanos para consultas comerciales o soporte técnico urgente.</p>
                     <p><strong>Teléfono:</strong> <a href="tel:+541112345678">+54 (11) 1234-5678</a></p>
                     <p><strong>Horario:</strong> Lunes a Viernes de 9:00 a 18:00 hs</p>
                 </div>
-                <div class="contacto-card">
+                <div class="contacto-card animate__animated animate__fadeInUp">
                     <h3>Correo Electrónico</h3>
                     <p>Escríbenos para presupuestos, ventas corporativas o asistencia técnica.</p>
                     <p><strong>Ventas:</strong> <a href="mailto:ventas@techsoluciones.com">ventas@techsoluciones.com</a></p>
                     <p><strong>Soporte Técnico:</strong> <a href="mailto:soporte@techsoluciones.com">soporte@techsoluciones.com</a></p>
                     <p><strong>Información:</strong> <a href="mailto:informacion@techsoluciones.com">informacion@techsoluciones.com</a></p>
                 </div>
-                <div class="contacto-card">
+                <div class="contacto-card animate__animated animate__fadeInUp">
                     <h3>Nuestras oficinas</h3>
                     <p>Visítanos en nuestras sucursales para recibir asistencia personalizada.</p>
                     <p><strong>Dirección:</strong> Av. Siempre Viva 123, Ciudad</p>
@@ -201,7 +204,6 @@
                 <h3 data-bs-toggle="collapse" data-bs-target="#faq22" style="cursor: pointer;">22. ¿Realizan reparación de placas de video (GPU) y cambio de thermal pads?</h3>
                 <p id="faq22" class="collapse">Sí, contamos con equipamiento para mantenimiento preventivo y reparación avanzada de placas de video, incluyendo reballing, cambio de componentes electrónicos dañados y reemplazo de thermal pads de alta calidad.</p>
                 </article>
-                </article>
                 <article class="preguntas">
                 <h3 data-bs-toggle="collapse" data-bs-target="#faq23" style="cursor: pointer;">23. ¿Qué sucede si mi equipo no tiene reparación o el presupuesto resulta inviable?</h3>
                 <p id="faq23" class="collapse">En caso de que el diagnóstico determine que la reparación no es técnicamente viable o supera el valor del equipo, te notificaremos de inmediato. Puedes retirar el equipo sin costo o solicitar una cotización con descuento para un recambio de hardware.</p>
@@ -243,7 +245,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Practicas 07/09. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Practicas Desarrollo Web. Todos los derechos reservados.</p>
         <p>Siguenos en nuestras redes</p>
         <ul>
             <li>

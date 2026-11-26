@@ -15,10 +15,11 @@
 }
 
 .carousel-item img {
-  height: 1200px;
-  width: 50%;
+width: 100%;
+height: clamp(280px, 40vw, 480px);
+object-fit: cover;
 
-  @media (max-width: 767px) {
-    height: 250px;
-  }
-} 
+@media (max-width: 767px) {
+height: 220px;
+}
+}

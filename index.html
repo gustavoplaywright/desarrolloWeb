@@ -11,8 +11,10 @@
     <!-- ANIMATE  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- FUENTE DE GOOGLE-->
-     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Irish+Grover&family=Kablammo&family=League+Gothic&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Irish+Grover&family=Kablammo&family=League+Gothic&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -47,39 +49,18 @@
                             <a class="nav-link" href="./pages/especiales.html">Especiales</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link animate__animated animate__shakeY animate__infinite" href="./pages/contactos.html">Contacto</a>
+                            <a class="nav-link animate__animated animate__pulse animate__infinite" href="./pages/contactos.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- PRUEBA DE REEMPLAZO DE HEADER POR EL DE BOOTSTRAP -->
-    <!-- <header> -->
-
-
-    <!--     <nav> -->
-    <!--            <h1>TECH SOLUCIONES</h1> -->
-    <!--            <h2 class="menuC">Menú</h2> -->
-    <!--           <figure> -->
-    <!--                <img src="./assets/imagenes/logo.JPG" alt="Logo de la empresa" class="logo"> -->
-    <!--            </figure> -->
-    <!--            <ul> -->
-    <!-- Lista de navegación -->
-    <!--                <li><a href="#inicio">Inicio</a></li> -->
-    <!--                <li><a href="./pages/nosotros.html">Nosotros</a></li> -->
-    <!--                <li><a href="./pages/productos.html">Productos</a></li> -->
-    <!--                <li><a href="./pages/especiales.html">Especiales</a></li> -->
-    <!--                <li><a href="./pages/contactos.html">Contacto</a></li> -->
-    <!--                 -->
-    <!--            </ul> -->
-    <!--        </nav> -->
-    <!--    </header>  -->
     <main>
-        <section class="inicio">
-            <article class="grid-container">
-                <h2 class="titulo">Inicio</h2>
-                <h3 class="subt-desc">Exploración de Categorías y Productos</h3>
+        <section class="inicio" id="inicio">
+            <article class="grid-container" data-aos="flip-down" data-aos-duration="3000">
+                <h2 class="titulo animate__animated animate__fadeInDown">Inicio</h2>
+                <h3 class="subt-desc animate__animated animate__fadeIn">Exploración de Categorías y Productos</h3>
                 <p class="bienvenida">Bienvenido al sitio web oficial de TechSoluciones: Computación y Soporte, la
                     plataforma digital diseñada
                     para satisfacer todas tus necesidades del mundo informático en un solo lugar. Tanto si eres un
@@ -114,49 +95,7 @@
         </section>
 
 
-        <!-- Aca voy a reemplazar la grilla de imagenes por un carrusel   
-       
-       
-        <div class="grid-container-img"> 
-            <article class="imagenesIndex">
-                <figure>
-                    <img src="./assets/imagenes/noteIni.jpg" alt="Notebook">
-                    <figcaption>Laptop</figcaption>
-                </figure>
-            </article>
-            <article class="imagenesIndex">
-                <figure>
-                    <img src="./assets/imagenes/cpu.jpg" alt="CPU">
-                    <figcaption>Gamer PC</figcaption>
-                </figure>
-            </article>
-            <article class="imagenesIndex">
-                <figure>
-                    <img src="./assets/imagenes/ram.jpg" alt="RAM">
-                    <figcaption>RAM</figcaption>
-                </figure>
-            </article>
-            <article class="imagenesIndex">
-                <figure>
-                    <img src="./assets/imagenes/ram.jpg" alt="RAM">
-                    <figcaption>RAM</figcaption>
-                </figure>
-            </article>
-            <article class="imagenesIndex">
-                <figure>
-                    <img src="./assets/imagenes/ram.jpg" alt="RAM">
-                    <figcaption>RAM</figcaption>
-                </figure>
-            </article>
-            <article class="imagenesIndex">
-                <figure>
-                    <img src="./assets/imagenes/ram.jpg" alt="RAM">
-                    <figcaption>RAM</figcaption>
-                </figure>
-            </article>
-        </div> -->
-
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide animate__animated animate__fadeIn" data-aos="flip-up" data-aos-duration="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -203,7 +142,7 @@
             </button>
         </div> 
         <section class="nosotros">
-            <h2>Promociones Exclusivas y Experiencia de Compra Única</h2>
+            <h2 class="animate__animated animate__fadeInDown">Promociones Exclusivas y Experiencia de Compra Única</h2>
             <p>Al recorrer el sitio, encontrarás una sección dedicada a las Ofertas de la Semana y promociones
                 exclusivas para compras web. Queremos que tu experiencia sea ágil y segura: la plataforma incluye
                 filtros de búsqueda avanzados, comparadores de especificaciones técnicas y un proceso de compra
@@ -218,7 +157,7 @@
                 verdaderamente comprometido. ¡Tu próxima actualización tecnológica comienza aquí!</p>
         </section>
 
-               <div id="carouselExampleDark2" class="carousel carousel-dark slide">
+        <div id="carouselExampleDark2" class="carousel carousel-dark slide animate__animated animate__fadeIn" data-aos="flip-down" data-aos-duration="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -232,24 +171,24 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="./assets/imagenes/componentes/carr1.jpg" class="d-block w-100" alt="Memoria RAM">
+                    <img src="./assets/imagenes/componentes/carr1.jpg" class="d-block w-100" alt="Técnico reparando componentes electrónicos">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Memorias RAM</h5>
-                        <p>Potencia y velocidad para tu equipo.</p>
+                        <h5>Servicio técnico especializado</h5>
+                        <p>Diagnóstico y reparación de componentes.</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
-                    <img src="./assets/imagenes/componentes/carr2.jpg" class="d-block w-100" alt="Procesador CPU">
+                    <img src="./assets/imagenes/componentes/carr2.jpg" class="d-block w-100" alt="Equipo de Tech Soluciones en el taller">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Procesadores</h5>
-                        <p>La última generación de CPUs del mercado.</p>
+                        <h5>Un equipo preparado para ayudarte</h5>
+                        <p>Asesoramiento cercano para cada proyecto.</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
-                    <img src="./assets/imagenes/componentes/carr3.jpg" class="d-block w-100" alt="Notebooks">
+                    <img src="./assets/imagenes/componentes/carr3.jpg" class="d-block w-100" alt="Técnicos trabajando en el armado de una computadora">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Notebooks</h5>
-                        <p>Equipos portátiles para trabajo y gaming.</p>
+                        <h5>Armado y diagnóstico de equipos</h5>
+                        <p>Configuraciones y soporte a medida.</p>
                     </div>
                 </div>
             </div> 
@@ -269,7 +208,7 @@
 
     </main>
     <footer>
-        <p>&copy; 2026 Practicas 07/09. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Practicas Desarrollo Web. Todos los derechos reservados.</p>
         <p>Siguenos en nuestras redes</p>
         <ul>
             <li>
@@ -287,6 +226,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+<!--AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+     AOS.init();
+</script>
 </body>
 
 </html>

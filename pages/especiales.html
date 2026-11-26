@@ -10,16 +10,18 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- ANIMATE  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <!-- FUENTE DE GOOGLE-->
+    <!-- FUENTE DE GOOGLE-->
      <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Irish+Grover&family=Kablammo&family=League+Gothic&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- CSS -->
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <header>
             <nav class="navbar navbar-expand-lg bg-black navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html#inicio">
                     <figure class="m-0">
                     <img src="../assets/imagenes/logo.JPG" alt="Logo de la empresa" class="logo">
                     </figure>
@@ -44,37 +46,37 @@
         </nav>
     </header>
     <main>
- <section class="nosotros">
+ <section class="nosotros" id="especiales">
             <article>
-                <h2>Notebooks</h2>
+                <h2 class="animate__animated animate__fadeInDown">Notebooks</h2>
                 
                 <!-- Contenedor exclusivo para la grilla de 4 imágenes -->
                 <div class="grilla-especiales">
-                    <figure class="imagenesIndex">
+                    <figure class="imagenesIndex animate__animated animate__zoomIn">
                         <img src="../assets/imagenes/notebooks/notebooksdell.jpg" alt="Notebook Dell 15 con procesador Ryzen 7" width="600">
                         <figcaption>Notebook Dell 15 Dc15255<br>Ryzen 7 7730u<br>32gb Ram<br>512gb Ssd</figcaption>
                     </figure>
-                    <figure class="imagenesIndex">
+                    <figure class="imagenesIndex animate__animated animate__zoomIn">
                         <img src="../assets/imagenes/notebooks/notebookshp.jpg" alt="Notebook HP 15 con procesador Intel Core i3" width="600">
                         <figcaption>Notebook HP 15-fd0331la<br>Intel Core i3<br>16gb Ram<br>128gb Ssd</figcaption>
                     </figure>
-                    <figure class="imagenesIndex">
+                    <figure class="imagenesIndex animate__animated animate__zoomIn">
                         <img src="../assets/imagenes/notebooks/notebookslenovo.jpg" alt="Notebook Lenovo Slim 3 con procesador Ryzen 5" width="600">
                         <figcaption>Notebook Lenovo Slim 3 <br>Ryzen 5<br>FS-H61M2<br>32gb Ram<br>480gb Ssd</figcaption>
                     </figure>
-                    <figure class="imagenesIndex">
+                    <figure class="imagenesIndex animate__animated animate__zoomIn">
                         <img src="../assets/imagenes/notebooks/notebookssamsung.jpg" alt="Notebook Samsung Bk4 con procesador Intel Core i7" width="600">
                         <figcaption>Notebook Samsung Bk4<br>Intel Core i7<br>16gb Ram<br>280gb Ssd</figcaption>
                     </figure>
                 </div>
 
-                <p>Nuestras notebooks están equipadas con los últimos procesadores, tarjetas gráficas de alto rendimiento y almacenamiento rápido, lo que las hace ideales para tareas exigentes como edición de video, diseño gráfico y juegos.</p>
-                <p>Además, ofrecemos una amplia gama de modelos para satisfacer las necesidades de todos los usuarios, desde computadoras de escritorio hasta portátiles ultraligeros. Explora nuestra selección y encuentra la computadora perfecta para ti.</p>
+                <p data-aos="fade-left" data-aos-duration="3000" >Nuestras notebooks están equipadas con los últimos procesadores, tarjetas gráficas de alto rendimiento y almacenamiento rápido, lo que las hace ideales para tareas exigentes como edición de video, diseño gráfico y juegos.</p>
+                <p data-aos="fade-right" data-aos-duration="3000" >Además, ofrecemos una amplia gama de modelos para satisfacer las necesidades de todos los usuarios, desde computadoras de escritorio hasta portátiles ultraligeros. Explora nuestra selección y encuentra la computadora perfecta para ti.</p>
             </article>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Practicas 07/09. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Practicas Desarrollo Web. Todos los derechos reservados.</p>
         <p>Siguenos en nuestras redes:</p>
         <ul>
             <li>
@@ -93,5 +95,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init();
+    </script>
 </body>
 </html>

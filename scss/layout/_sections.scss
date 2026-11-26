@@ -3,7 +3,7 @@
 /* ===== Estilo la section inicio ===== */
 .inicio {
   padding: 64px 32px;
-  /*background-color: #f8f9fa;*/
+
 }
 
 .nosotros {
@@ -25,11 +25,6 @@
   }
 
 
-  /*el hover por ahora no lo quiero
-  &:hover {
-    background-color: $color-hover-bg; 
-    transform: translateY(-3px);
-  }*/
 
   h3 {
     font-size: 1.5rem;
@@ -43,42 +38,42 @@
 
 
 /*section contacto*/
-.medios-contacto {
-  padding: 64px 32px;
+%text-section {
+  padding: $spacing-unit * 8 $spacing-unit * 4;
   text-align: justify;
   color: $color-primary;
   margin-bottom: 2rem;
 }
 
-.contacto-grid, .redes-list {
-  display: flex;
-  gap: 24px;
-}
-
-/*section redes*/
-.redes-sociales {
-  padding: 64px 32px;
-  text-align: justify;
-  color: $color-primary;
-  margin-bottom: 2rem;
-}
-
-/*section preguntas*/
-.preguntas-frecuentes {
-  padding: 64px 32px;
-  text-align: justify;
-  color: $color-primary;
-  margin-bottom: 2rem;
-}
-
-/*section faq*/
+.medios-contacto,
+.redes-sociales,
+.preguntas-frecuentes,
 .formulario-contacto {
-  padding: 64px 32px;
-  text-align: justify;
-  color: $color-primary;
-  margin-bottom: 2rem;
-  border: 1px solid $color-primary; 
+@extend %text-section;
 }
+
+.contacto-grid,
+.redes-list {
+display: flex;
+gap: $spacing-unit * 3;
+}
+
+.contacto-grid {
+  flex-wrap: wrap;
+}
+
+.contacto-card {
+  flex: 1 1 280px;
+}
+
+.redes-list {
+  flex-direction: column;
+}
+
+.formulario-contacto {
+border: 1px solid $color-primary;
+}
+
 
 
 .imagenesIndex {
@@ -88,22 +83,23 @@
 }
 
 .imagenesIndex img {
-  width: 90%;
+  max-width: 100%;
+  height: auto;
  
 }
 
 .imagenesNosotros {
   max-width: 90rem;
-  padding: 4rem 2rem;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto;
+  padding: 2rem;
 }
 
 
 
 .imagenesNosotros img {
-  width: 90%;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -143,8 +139,12 @@
   text-align: center;
 }
 
-.formulario-contacto h3 {
+/*.formulario-contacto h3 {
   font-size: 1.2rem;
+}*/
+
+.formulario-contacto {
+  border: 1px solid $color-primary;
 }
 
 /*KEYFRAMES*/
@@ -180,11 +180,16 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
-   
-    /*&:hover {
-      transform: scale(1.2);
-    }*/
+
   }
 
-
+@media (max-width: 767px) {
+.inicio,
+.medios-contacto,
+.redes-sociales,
+.preguntas-frecuentes,
+.formulario-contacto {
+padding: 24px 16px;
+}
+}
 

@@ -20,10 +20,9 @@ body {
 body h2 {
   margin-bottom: 32px;
 }
-body {
-  /* ===== El titulo de cada pagina se va a ver asi ===== */
-}
-body h1 {
+
+/* ===== El titulo de cada pagina se va a ver asi ===== */
+h1 {
   font-size: 2rem;
   font-style: oblique;
   color: #ff0000;
@@ -46,10 +45,18 @@ header {
 }
 
 .logo {
-  width: 700px;
+  width: clamp(48px, 6vw, 80px);
   height: auto;
 }
 
+@media (max-width: 767px) {
+  header {
+    padding: 8px 12px;
+  }
+  header .navbar-brand h1 {
+    font-size: 1rem;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -77,29 +84,42 @@ nav ul li a {
   font-family: "Archivo Black", sans-serif;
 }
 
-/* ===== Estilado del footer ===== */
 footer {
   display: flex;
-  padding: 16px 32px;
-  gap: 16px;
-  background: linear-gradient(to right, #080808, #bdc4c4);
-  /*background-color: $color-dark;*/
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 16px;
+  padding: 16px 32px;
   color: #ff0000;
-  /* ===== copio el estilo de las letras del header ===== */
+  background: linear-gradient(to right, #080808, #bdc4c4);
 }
-footer footer ul li a {
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer ul li a {
   color: #ff0000;
   text-decoration: none;
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
 }
 
+@media (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+  }
+}
 /*  Estilo de la grid de arriba */
 .grid-container {
-  /*border: 4px solid $color-primary;*/
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: auto;
   color: #ff0000;
   grid-template-areas: "titulo bienvenida bienvenida" "subt-desc subt-desc subt-desc" "comp note insu";
@@ -138,12 +158,18 @@ footer footer ul li a {
 
 .grid-productos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
   padding: 32px;
   margin-bottom: 32px;
   margin-top: 32px;
-  grid-template-areas: "menu-compu menu-compu menu-note" "menu-comp menu-comp menu-note";
+}
+
+.grid-productos > .imagenesIndex {
+  min-width: 0;
+  max-width: none;
+  margin-top: 0;
+  padding: 24px;
 }
 
 h3.menu-compu, h3.menu-comp, h3.menu-note {
@@ -151,9 +177,7 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 }
 
 .grid-contactos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  display: block;
   padding: 32px;
   border: 1px solid #ff0000;
   margin-bottom: 32px;
@@ -176,17 +200,47 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 /* Grilla específica para las 4 notebooks */
 .grilla-especiales {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   padding: 32px;
   margin-bottom: 32px;
   margin-top: 32px;
 }
 
+@media (min-width: 576px) and (max-width: 991px) {
+  .grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "titulo bienvenida" "subt-desc subt-desc" "comp note" "insu insu";
+  }
+  .grid-productos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "subt-desc" "bienvenida" "comp" "note" "insu";
+  }
+  .grid-contactos {
+    padding: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .grid-productos,
+  .grilla-especiales {
+    grid-template-columns: 1fr;
+  }
+  .grid-productos,
+  .grilla-especiales {
+    padding: 16px;
+  }
+  .grid-productos > .imagenesIndex {
+    padding: 16px;
+  }
+}
 /* ===== Estilo la section inicio ===== */
 .inicio {
   padding: 64px 32px;
-  /*background-color: #f8f9fa;*/
 }
 
 .nosotros {
@@ -204,13 +258,6 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   color: #ff0000;
   text-align: center;
 }
-.nosotros {
-  /*el hover por ahora no lo quiero
-  &:hover {
-    background-color: $color-hover-bg; 
-    transform: translateY(-3px);
-  }*/
-}
 .nosotros h3 {
   font-size: 1.5rem;
   font-style: oblique;
@@ -221,40 +268,35 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 }
 
 /*section contacto*/
-.medios-contacto {
-  padding: 64px 32px;
-  text-align: justify;
-  color: #ff0000;
-  margin-bottom: 2rem;
-}
-
-.contacto-grid, .redes-list {
-  display: flex;
-  gap: 24px;
-}
-
-/*section redes*/
-.redes-sociales {
-  padding: 64px 32px;
-  text-align: justify;
-  color: #ff0000;
-  margin-bottom: 2rem;
-}
-
-/*section preguntas*/
-.preguntas-frecuentes {
-  padding: 64px 32px;
-  text-align: justify;
-  color: #ff0000;
-  margin-bottom: 2rem;
-}
-
-/*section faq*/
+.medios-contacto,
+.redes-sociales,
+.preguntas-frecuentes,
 .formulario-contacto {
   padding: 64px 32px;
   text-align: justify;
   color: #ff0000;
   margin-bottom: 2rem;
+}
+
+.contacto-grid,
+.redes-list {
+  display: flex;
+  gap: 24px;
+}
+
+.contacto-grid {
+  flex-wrap: wrap;
+}
+
+.contacto-card {
+  flex: 1 1 280px;
+}
+
+.redes-list {
+  flex-direction: column;
+}
+
+.formulario-contacto {
   border: 1px solid #ff0000;
 }
 
@@ -265,19 +307,20 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 }
 
 .imagenesIndex img {
-  width: 90%;
+  max-width: 100%;
+  height: auto;
 }
 
 .imagenesNosotros {
   max-width: 90rem;
-  padding: 4rem 2rem;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto;
+  padding: 2rem;
 }
 
 .imagenesNosotros img {
-  width: 90%;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .redes-sociales h2 {
@@ -314,8 +357,11 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   text-align: center;
 }
 
-.formulario-contacto h3 {
+/*.formulario-contacto h3 {
   font-size: 1.2rem;
+}*/
+.formulario-contacto {
+  border: 1px solid #ff0000;
 }
 
 /*KEYFRAMES*/
@@ -350,12 +396,16 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.figures {
-  /*&:hover {
-    transform: scale(1.2);
-  }*/
-}
 
+@media (max-width: 767px) {
+  .inicio,
+  .medios-contacto,
+  .redes-sociales,
+  .preguntas-frecuentes,
+  .formulario-contacto {
+    padding: 24px 16px;
+  }
+}
 .boton {
   background-color: #ff0000;
   margin-bottom: 2rem;
@@ -382,12 +432,49 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
 }
 
 .carousel-item img {
-  height: 1200px;
-  width: 50%;
+  width: 100%;
+  height: clamp(280px, 40vw, 480px);
+  object-fit: cover;
 }
 @media (max-width: 767px) {
   .carousel-item img {
-    height: 250px;
+    height: 220px;
+  }
+}
+
+/* MEDIA QUERIES - DISEÑO RESPONSIVE */
+/* hasta 992px */
+@media (max-width: 992px) {
+  .nosotros {
+    padding: 32px;
+  }
+  .grid-productos,
+  .grilla-especiales {
+    gap: 16px;
+  }
+}
+/* tabletas y móviles */
+@media (max-width: 768px) {
+  .nosotros {
+    padding: 24px 16px;
+    margin-top: 8px;
+  }
+  .nosotros h2 {
+    font-size: 1.5rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* teléfonos */
+@media (max-width: 480px) {
+  .nosotros {
+    padding: 16px 12px;
+  }
+  .inicio p,
+  .nosotros p {
+    font-size: 0.95rem;
   }
 }
 

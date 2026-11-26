@@ -20,10 +20,9 @@ body {
 body h2 {
   margin-bottom: 32px;
 }
-body {
-  /* ===== El titulo de cada pagina se va a ver asi ===== */
-}
-body h1 {
+
+/* ===== El titulo de cada pagina se va a ver asi ===== */
+h1 {
   font-size: 2rem;
   font-style: oblique;
   color: #ff0000;
@@ -479,4 +478,4 @@ h3.menu-compu, h3.menu-comp, h3.menu-note {
   }
 }
 
-
+/*# sourceMappingURL=style.css.map */
